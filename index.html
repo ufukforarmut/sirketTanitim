@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridyen Mimarlık | Mimari Tasarım ve İç Mimarlık Stüdyosu</title>
+  <meta name="description" content="Meridyen Mimarlık; konut, ofis ve ticari projelerde konsept tasarımdan anahtar teslim uygulamaya kadar bütüncül mimari ve iç mimari çözümler üretir.">
+  <meta name="theme-color" content="#FAF9F6">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Meridyen Mimarlık ve İç Mimarlık">
+  <meta property="og:description" content="Mekânı, orada yaşayacak olana göre tasarlarız.">
+  <meta property="og:locale" content="tr_TR">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">İçeriğe geç</a>
+
+  <!-- ============ HEADER / GEZİNME ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+
+      <a href="#hero" class="brand" aria-label="Meridyen Mimarlık — sayfa başına dön">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 27V13.4L16 5l12 8.4V27" stroke="currentColor" stroke-width="1.8"
+                  stroke-linejoin="round"/>
+            <path d="M4 27h24M12.6 27v-8.4h6.8V27" stroke="currentColor" stroke-width="1.8"
+                  stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Meridyen</span>
+          <span class="brand__sub">Mimarlık &amp; İç Mimarlık</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Ana menü">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#hizmetler">Hizmetlerimiz</a></li>
+          <li><a class="nav__link" href="#projeler">Proje Alanları</a></li>
+          <li><a class="nav__link" href="#studyo">Stüdyo</a></li>
+          <li><a class="nav__link" href="#iletisim">İletişim</a></li>
+          <li class="nav__cta-mobile">
+            <a class="btn btn--primary btn--block" href="#iletisim">Ücretsiz Ön Görüşme</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#iletisim" class="btn btn--primary site-header__cta">Ücretsiz Ön Görüşme</a>
+
+      <button type="button" class="nav-toggle" id="navToggle"
+              aria-label="Menüyü aç" aria-expanded="false" aria-controls="primaryNav">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__pattern" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            2007&rsquo;den bu yana İstanbul merkezli tasarım stüdyosu
+          </p>
+
+          <h1 class="hero__title">
+            Mekânı, orada <em>yaşayacak</em> olana göre tasarlarız.
+          </h1>
+
+          <p class="hero__subtitle">
+            Konut, ofis ve ticari projelerde; arazi analizinden anahtar teslim uygulamaya
+            kadar süreci tek elden yürütüyoruz. Her proje, kullanıcısının günlük
+            ritmine ve arsanın ışığına göre yeniden kurgulanır.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#hizmetler" class="btn btn--primary">Hizmetleri İncele</a>
+            <a href="#iletisim" class="btn btn--ghost">Bizimle İletişime Geçin</a>
+          </div>
+
+          <ul class="hero__badges">
+            <li>TMMOB Mimarlar Odası tescilli</li>
+            <li>LEED &amp; BREEAM danışmanlığı</li>
+            <li>Ruhsat ve iskân süreç takibi</li>
+          </ul>
+        </div>
+
+        <!-- Teknik görsel: örnek kat planı çizimi -->
+        <figure class="plan" aria-labelledby="planCaption">
+          <div class="plan__frame">
+            <svg class="plan__svg" viewBox="0 0 480 400" role="img"
+                 aria-label="Örnek konut kat planı çizimi: salon, mutfak, iki yatak odası, banyo ve teras yerleşimi">
+              <!-- Izgara -->
+              <defs>
+                <pattern id="planGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".28"/>
+                </pattern>
+              </defs>
+              <rect x="0" y="0" width="480" height="400" fill="url(#planGrid)" class="plan__grid"/>
+
+              <!-- Dış duvarlar -->
+              <g class="plan__wall">
+                <rect x="60" y="58" width="330" height="272" fill="none" stroke-width="6"/>
+                <!-- İç bölmeler -->
+                <path d="M225 58v130M225 188H60M225 246h165M312 246v84" fill="none" stroke-width="4"/>
+              </g>
+
+              <!-- Kapı açılımları -->
+              <g class="plan__door">
+                <path d="M225 150a26 26 0 0 1-26 26" fill="none" stroke-width="1.6"/>
+                <path d="M150 188a26 26 0 0 1 26 26" fill="none" stroke-width="1.6"/>
+                <path d="M312 288a24 24 0 0 1 24-24" fill="none" stroke-width="1.6"/>
+              </g>
+
+              <!-- Pencere boşlukları -->
+              <g class="plan__window">
+                <path d="M100 58h72M262 58h74M390 108v70M60 236v56" stroke-width="6"/>
+              </g>
+
+              <!-- Teras (kesikli) -->
+              <path d="M390 246h54v84h-54" fill="none" stroke-width="1.6"
+                    stroke-dasharray="7 6" class="plan__dashed"/>
+
+              <!-- Oda etiketleri -->
+              <g class="plan__label">
+                <text x="140" y="120">SALON</text>
+                <text x="140" y="138" class="plan__area">32.4 m²</text>
+
+                <text x="304" y="120">MUTFAK</text>
+                <text x="304" y="138" class="plan__area">14.8 m²</text>
+
+                <text x="140" y="264">YATAK ODASI</text>
+                <text x="140" y="282" class="plan__area">18.2 m²</text>
+
+                <text x="262" y="296">BANYO</text>
+
+                <text x="352" y="296">HOL</text>
+
+                <text x="417" y="292" class="plan__area">TERAS</text>
+              </g>
+
+              <!-- Ölçü çizgisi -->
+              <g class="plan__dim">
+                <path d="M60 356h330M60 350v12M390 350v12" stroke-width="1.2"/>
+                <text x="225" y="378" text-anchor="middle">11.40 m</text>
+              </g>
+
+              <!-- Kuzey oku -->
+              <g class="plan__north">
+                <circle cx="432" cy="70" r="17" fill="none" stroke-width="1.2"/>
+                <path d="M432 58v24M432 58l6 9h-12l6-9" stroke-width="1.4"/>
+                <text x="432" y="46" text-anchor="middle">K</text>
+              </g>
+            </svg>
+          </div>
+          <figcaption class="plan__caption" id="planCaption">
+            <span class="plan__code">MRD&middot;24&ndash;017</span>
+            Bahçeşehir Konut Projesi &mdash; tip kat planı, 1/100 ölçek
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Güven bandı -->
+      <div class="container">
+        <dl class="stats" aria-label="Stüdyo künyesi">
+          <div class="stats__item">
+            <dt class="stats__label">Yıllık stüdyo deneyimi</dt>
+            <dd class="stats__value">18</dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__label">Tamamlanan proje</dt>
+            <dd class="stats__value">240<span aria-hidden="true">+</span></dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__label">Uygulanan kapalı alan</dt>
+            <dd class="stats__value">96.000 m²</dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__label">Ulusal tasarım ödülü</dt>
+            <dd class="stats__value">12</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ HİZMETLERİMİZ ============ -->
+    <section class="section" id="hizmetler" aria-labelledby="hizmetlerBaslik">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>Hizmetlerimiz</p>
+          <h2 class="section__title" id="hizmetlerBaslik">Tek bir ekip, kesintisiz bir süreç</h2>
+          <p class="section__lead">
+            Tasarım, proje ve uygulama aynı çatı altında yürüdüğü için karar kayıpları
+            ve şantiyede sürpriz maliyetler ortadan kalkar.
+          </p>
+        </header>
+
+        <div class="cards cards--3">
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 20.4V8.9L12 3.2l9 5.7v11.5" stroke="currentColor" stroke-width="1.5"
+                      stroke-linejoin="round"/>
+                <path d="M3 20.4h18M9.4 20.4v-6.2h5.2v6.2" stroke="currentColor" stroke-width="1.5"
+                      stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3 class="card__title">Mimari Tasarım &amp; Proje</h3>
+            <p class="card__text">
+              Arsa ve imar analiziyle başlar, kütle çalışması ve konsept eskizleriyle
+              devam ederiz. Avan projeden uygulama projesine kadar tüm paftalar,
+              ruhsat sürecinde belediyeye sunulacak biçimde hazırlanır.
+            </p>
+            <ul class="card__list">
+              <li>İmar durumu ve fizibilite analizi</li>
+              <li>Konsept, avan ve uygulama projeleri</li>
+              <li>Statik, mekanik, elektrik proje koordinasyonu</li>
+              <li>Ruhsat, iskân ve resmî kurum takibi</li>
+            </ul>
+            <a class="card__link" href="#iletisim">
+              Proje için görüşelim
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3.2" y="3.2" width="17.6" height="17.6" rx="2.2"
+                      stroke="currentColor" stroke-width="1.5"/>
+                <path d="M3.2 14.1h9.3v6.7M12.5 3.2v10.9h8.3" stroke="currentColor"
+                      stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="7.6" cy="8.6" r="1.8" stroke="currentColor" stroke-width="1.4"/>
+              </svg>
+            </span>
+            <h3 class="card__title">İç Mimari &amp; Malzeme Kurgusu</h3>
+            <p class="card__text">
+              Mekânın ışığını, sirkülasyonunu ve depolama ihtiyacını birlikte çözeriz.
+              Doğal malzeme paletinden aydınlatma senaryosuna, özel üretim mobilya
+              detaylarından tekstile kadar her seçim 1/1 detayla belgelenir.
+            </p>
+            <ul class="card__list">
+              <li>Mekân kurgusu ve yerleşim planı</li>
+              <li>Malzeme, renk ve aydınlatma senaryosu</li>
+              <li>Özel üretim mobilya ve imalat detayları</li>
+              <li>3B görselleştirme ve sanal tur</li>
+            </ul>
+            <a class="card__link" href="#iletisim">
+              Mekânınızı konuşalım
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.9 3.4 7.5v9l8.6 4.6 8.6-4.6v-9L12 2.9Z" stroke="currentColor"
+                      stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="m3.4 7.5 8.6 4.6 8.6-4.6M12 12.1v9" stroke="currentColor"
+                      stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3 class="card__title">Uygulama &amp; Şantiye Yönetimi</h3>
+            <p class="card__text">
+              Projenin kâğıt üzerinde kalmaması için işi sahada da biz takip ederiz.
+              Metraj ve keşif çıkarır, yüklenici tekliflerini karşılaştırır, imalatı
+              haftalık raporlarla kontrol ederiz.
+            </p>
+            <ul class="card__list">
+              <li>Metraj, keşif ve bütçe planlaması</li>
+              <li>Yüklenici seçimi ve sözleşme desteği</li>
+              <li>Haftalık şantiye kontrolü ve ilerleme raporu</li>
+              <li>Anahtar teslim ve kabul süreci</li>
+            </ul>
+            <a class="card__link" href="#iletisim">
+              Uygulama desteği alın
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJE ALANLARI ============ -->
+    <section class="section section--alt" id="projeler" aria-labelledby="projelerBaslik">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>Proje Alanları</p>
+          <h2 class="section__title" id="projelerBaslik">Her yapı türünün kendi dili vardır</h2>
+          <p class="section__lead">
+            Bir kafenin akustiğiyle bir kliniğin hijyen kurgusu aynı yaklaşımla çözülmez.
+            Çalıştığımız alanların her birinde yönetmelik ve kullanım bilgisi biriktirdik.
+          </p>
+        </header>
+
+        <div class="sectors">
+
+          <article class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 20.4V9.6L12 4l8 5.6v10.8" stroke="currentColor" stroke-width="1.5"
+                      stroke-linejoin="round"/>
+                <path d="M4 20.4h16M10.2 20.4v-5.6h3.6v5.6" stroke="currentColor"
+                      stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3 class="sector__title">Konut</h3>
+            <p class="sector__text">
+              Müstakil ev, villa ve daire projelerinde aile ritmine göre kurgulanan
+              plan şemaları; doğal ışık ve depolama odaklı çözümler.
+            </p>
+          </article>
+
+          <article class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4.2" y="3.4" width="15.6" height="17.2" rx="1.8"
+                      stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8.2 7.4h3M13 7.4h3M8.2 11.6h3M13 11.6h3M8.2 15.8h7.8"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3 class="sector__title">Ofis &amp; Çalışma Alanı</h3>
+            <p class="sector__text">
+              Hibrit çalışma düzenine uygun açık ofis kurguları, akustik bölümlenme,
+              toplantı ve odaklanma alanlarının dengeli dağılımı.
+            </p>
+          </article>
+
+          <article class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 9.2 5.6 4h12.8L20 9.2M4 9.2h16v11.4H4V9.2Z" stroke="currentColor"
+                      stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9.4 9.2v3.4a2.6 2.6 0 0 0 5.2 0V9.2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </span>
+            <h3 class="sector__title">Perakende &amp; Mağaza</h3>
+            <p class="sector__text">
+              Vitrin etkisi, müşteri sirkülasyonu ve marka kimliğinin mekâna
+              aktarılması; zincir mağazalar için uygulanabilir konsept kılavuzu.
+            </p>
+          </article>
+
+          <article class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.4 20.6V6.4l7.4-2.8v17M10.8 20.6h9.8V10.2h-9.8"
+                      stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M14.4 14.2h2.6M6.4 9.6h1.4M6.4 13.4h1.4" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3 class="sector__title">Otel &amp; Ağırlama</h3>
+            <p class="sector__text">
+              Butik otel ve restoranlarda misafir deneyimini önceleyen kurgu; servis
+              akışı, akustik konfor ve yönetmeliğe uygun kaçış çözümleri.
+            </p>
+          </article>
+
+          <article class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4 2.8 8.4 12 12.8l9.2-4.4L12 4Z" stroke="currentColor"
+                      stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M6.6 10.6v5.2c0 1.7 2.4 3.2 5.4 3.2s5.4-1.5 5.4-3.2v-5.2"
+                      stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3 class="sector__title">Eğitim &amp; Sağlık</h3>
+            <p class="sector__text">
+              Kreş, kurs merkezi ve poliklinik projelerinde erişilebilirlik,
+              hijyen zonlaması ve ilgili yönetmeliklere tam uyum.
+            </p>
+          </article>
+
+          <article class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.6 20.4V8.2l7.4-4.6 7.4 4.6v12.2" stroke="currentColor"
+                      stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M4.6 20.4h14.8M9 20.4v-6h6v6M8.4 11h7.2" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3 class="sector__title">Restorasyon &amp; Yenileme</h3>
+            <p class="sector__text">
+              Tescilli yapılarda röleve, restitüsyon ve restorasyon projeleri;
+              koruma kurulu süreçlerinin yürütülmesi ve güçlendirme çözümleri.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STÜDYO / NEDEN BİZ ============ -->
+    <section class="section" id="studyo" aria-labelledby="studyoBaslik">
+      <div class="container">
+        <div class="split">
+
+          <div class="split__content reveal">
+            <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>Stüdyo</p>
+            <h2 class="section__title" id="studyoBaslik">
+              Şablon proje çizmiyoruz.<br>
+              Her arsa kendi çözümünü söyler.
+            </h2>
+            <p class="section__lead">
+              Meridyen, 2007&rsquo;de üç mimarın kurduğu; bugün 14 kişilik mimar, iç mimar
+              ve inşaat mühendisinden oluşan bir stüdyo. Katalog çözümler yerine, arsanın
+              yönelimini, rüzgârını ve komşuluk ilişkisini okuyarak başlıyoruz. Sonuç,
+              yalnızca güzel görünen değil; ısıtma faturasını düşüren, bakımı kolay ve
+              yıllar içinde yaşlanmayan yapılar oluyor.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature">
+                <span class="feature__check" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m5 10.4 3.3 3.3L15 6.9" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="feature__title">Tasarımı yapan ekip sahada da var</h3>
+                  <p class="feature__text">
+                    Projeyi çizen mimar, şantiye ziyaretlerine de katılır. Detay
+                    kararları telefonla değil, imalatın başında verilir.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature">
+                <span class="feature__check" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m5 10.4 3.3 3.3L15 6.9" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="feature__title">Bütçe, ilk eskizden itibaren masada</h3>
+                  <p class="feature__text">
+                    Konsept aşamasında yaklaşık maliyet aralığı paylaşılır; uygulanamayacak
+                    bir projeyi çizip sonra kısaltmak zorunda kalmazsınız.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature">
+                <span class="feature__check" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m5 10.4 3.3 3.3L15 6.9" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="feature__title">Enerji ve sürdürülebilirlik odaklı kurgu</h3>
+                  <p class="feature__text">
+                    Pasif ısıtma-soğutma, doğal havalandırma ve yerel malzeme tercihleri;
+                    talep hâlinde LEED ve BREEAM sertifikasyon danışmanlığı.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature">
+                <span class="feature__check" aria-hidden="true">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m5 10.4 3.3 3.3L15 6.9" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="feature__title">Mevzuat ve ruhsat süreci bizde</h3>
+                  <p class="feature__text">
+                    İmar yönetmeliği, otopark ve yangın gereklilikleri ile belediye
+                    yazışmalarını stüdyo yürütür; siz karar vermeye odaklanırsınız.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="split__aside reveal" aria-label="Çalışma süreci ve stüdyo künyesi">
+            <div class="panel">
+              <h3 class="panel__title">Çalışma Sürecimiz</h3>
+              <ol class="process">
+                <li class="process__step">
+                  <span class="process__num" aria-hidden="true">01</span>
+                  <div>
+                    <h4 class="process__title">Tanışma ve arsa keşfi</h4>
+                    <p class="process__text">
+                      İhtiyaç programı, bütçe aralığı ve arsanın imar durumu birlikte netleştirilir.
+                    </p>
+                  </div>
+                </li>
+                <li class="process__step">
+                  <span class="process__num" aria-hidden="true">02</span>
+                  <div>
+                    <h4 class="process__title">Konsept ve kütle çalışması</h4>
+                    <p class="process__text">
+                      İki alternatif şema ve 3B görselle tasarım dili üzerinde anlaşılır.
+                    </p>
+                  </div>
+                </li>
+                <li class="process__step">
+                  <span class="process__num" aria-hidden="true">03</span>
+                  <div>
+                    <h4 class="process__title">Uygulama projesi</h4>
+                    <p class="process__text">
+                      Tüm paftalar, detaylar ve mahal listesi; ruhsat başvurusuna hazır dosya.
+                    </p>
+                  </div>
+                </li>
+                <li class="process__step">
+                  <span class="process__num" aria-hidden="true">04</span>
+                  <div>
+                    <h4 class="process__title">Uygulama ve teslim</h4>
+                    <p class="process__text">
+                      Haftalık şantiye kontrolü, ilerleme raporu ve anahtar teslim kabul.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+
+              <hr class="panel__divider">
+
+              <h3 class="panel__title">Stüdyo Künyesi</h3>
+              <dl class="facts">
+                <div class="facts__row">
+                  <dt class="facts__key">Kuruluş</dt>
+                  <dd class="facts__val">2007, İstanbul</dd>
+                </div>
+                <div class="facts__row">
+                  <dt class="facts__key">Ekip</dt>
+                  <dd class="facts__val">14 kişi &middot; mimar, iç mimar, inşaat müh.</dd>
+                </div>
+                <div class="facts__row">
+                  <dt class="facts__key">Tescil</dt>
+                  <dd class="facts__val">TMMOB Mimarlar Odası &middot; SMM belgeli</dd>
+                </div>
+                <div class="facts__row">
+                  <dt class="facts__key">Yazılım</dt>
+                  <dd class="facts__val">ArchiCAD, Revit, Rhino, Lumion</dd>
+                </div>
+              </dl>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ İLETİŞİM ============ -->
+    <section class="section section--alt" id="iletisim" aria-labelledby="iletisimBaslik">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>İletişim</p>
+          <h2 class="section__title" id="iletisimBaslik">Projenizi konuşmakla başlayalım</h2>
+          <p class="section__lead">
+            Formu doldurun; ilk görüşmede arsanızı, ihtiyaç programınızı ve bütçe
+            aralığınızı ücretsiz değerlendirelim. Genellikle 1 iş günü içinde dönüş yapıyoruz.
+          </p>
+        </header>
+
+        <div class="contact">
+
+          <!-- Form: backend entegrasyonuna hazır -->
+          <div class="contact__form-wrap reveal">
+            <form class="form" id="contact-form" action="" method="POST" novalidate>
+
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="fullName">Ad Soyad <span class="req" aria-hidden="true">*</span></label>
+                  <input class="form__input" type="text" id="fullName" name="fullName"
+                         autocomplete="name" placeholder="Ör. Elif Yıldırım"
+                         required aria-required="true" aria-describedby="fullNameError">
+                  <p class="form__error" id="fullNameError" role="alert" hidden></p>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="email">E-Posta <span class="req" aria-hidden="true">*</span></label>
+                  <input class="form__input" type="email" id="email" name="email"
+                         autocomplete="email" placeholder="ad.soyad@ornek.com"
+                         required aria-required="true" aria-describedby="emailError">
+                  <p class="form__error" id="emailError" role="alert" hidden></p>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="phone">Telefon</label>
+                  <input class="form__input" type="tel" id="phone" name="phone"
+                         autocomplete="tel" placeholder="+90 5XX XXX XX XX"
+                         aria-describedby="phoneError">
+                  <p class="form__error" id="phoneError" role="alert" hidden></p>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="subject">Konu <span class="req" aria-hidden="true">*</span></label>
+                  <select class="form__input form__select" id="subject" name="subject"
+                          required aria-required="true" aria-describedby="subjectError">
+                    <option value="">Lütfen bir konu seçin</option>
+                    <option value="mimari-proje">Mimari Proje</option>
+                    <option value="ic-mimari">İç Mimari Tasarım</option>
+                    <option value="uygulama-danismanlik">Uygulama &amp; Danışmanlık</option>
+                  </select>
+                  <p class="form__error" id="subjectError" role="alert" hidden></p>
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="message">Mesaj <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="form__input form__textarea" id="message" name="message" rows="5"
+                          placeholder="Projenizin yeri, yaklaşık büyüklüğü ve beklediğiniz teslim süresi hakkında kısaca bilgi verin."
+                          required aria-required="true" aria-describedby="messageError"></textarea>
+                <p class="form__error" id="messageError" role="alert" hidden></p>
+              </div>
+
+              <div class="form__group form__group--check">
+                <input class="form__checkbox" type="checkbox" id="consent" name="consent"
+                       required aria-required="true" aria-describedby="consentError">
+                <label class="form__consent" for="consent">
+                  <a href="#kvkk">KVKK Aydınlatma Metni</a> kapsamında kişisel verilerimin
+                  iletişim amacıyla işlenmesine onay veriyorum. <span class="req" aria-hidden="true">*</span>
+                </label>
+                <p class="form__error" id="consentError" role="alert" hidden></p>
+              </div>
+
+              <button class="btn btn--primary btn--submit" type="submit" id="submitBtn"
+                      aria-label="İletişim formunu gönder">
+                <span class="btn__label">Talebi Gönder</span>
+                <span class="btn__spinner" aria-hidden="true"></span>
+              </button>
+
+              <p class="form__note">
+                Paylaştığınız bilgiler yalnızca talebinizi değerlendirmek için kullanılır,
+                üçüncü taraflarla paylaşılmaz.
+              </p>
+
+              <!-- Ekran okuyucular için canlı durum bildirimi -->
+              <p class="visually-hidden" role="status" aria-live="polite" id="formStatus"></p>
+            </form>
+          </div>
+
+          <!-- İletişim bilgileri -->
+          <aside class="contact__info reveal" aria-label="Doğrudan iletişim bilgileri">
+            <div class="info-card info-card--highlight">
+              <h3 class="info-card__title">Stüdyoya davetlisiniz</h3>
+              <p class="info-card__text">
+                Malzeme kütüphanemizi görmek ve maketler üzerinden konuşmak isterseniz,
+                randevuyla stüdyomuzda ağırlamaktan memnuniyet duyarız.
+              </p>
+              <a class="info-card__phone" href="tel:+902123650150">+90 212 365 01 50</a>
+              <span class="info-card__badge">Hafta içi 09:00 &ndash; 18:30</span>
+            </div>
+
+            <ul class="info-list">
+              <li class="info-list__item">
+                <span class="info-list__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5.2" width="18" height="13.6" rx="2.2"
+                          stroke="currentColor" stroke-width="1.5"/>
+                    <path d="m3.8 6.6 8.2 6 8.2-6" stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 class="info-list__label">E-Posta</h4>
+                  <a class="info-list__value" href="mailto:info@meridyenmimarlik.com">info@meridyenmimarlik.com</a>
+                </div>
+              </li>
+
+              <li class="info-list__item">
+                <span class="info-list__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.4 3.8h3.1l1.6 4-2 1.3a11.4 11.4 0 0 0 5.8 5.8l1.3-2 4 1.6v3.1a1.6 1.6 0 0 1-1.7 1.6C10.9 18.7 5.3 13.1 4.8 5.5a1.6 1.6 0 0 1 1.6-1.7Z"
+                          stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 class="info-list__label">Telefon</h4>
+                  <a class="info-list__value" href="tel:+902123650150">+90 212 365 01 50</a>
+                </div>
+              </li>
+
+              <li class="info-list__item">
+                <span class="info-list__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"
+                          stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 class="info-list__label">Stüdyo</h4>
+                  <address class="info-list__value info-list__value--plain">
+                    Kuloğlu Mah. Turnacıbaşı Cad. No: 18<br>
+                    Kat 3, Beyoğlu / İstanbul
+                  </address>
+                </div>
+              </li>
+
+              <li class="info-list__item">
+                <span class="info-list__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="8.4" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M12 7.3V12l3.1 1.9" stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 class="info-list__label">Çalışma Saatleri</h4>
+                  <p class="info-list__value info-list__value--plain">
+                    Pazartesi &ndash; Cuma, 09:00 &ndash; 18:30<br>
+                    Cumartesi randevuyla
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+
+        <div class="site-footer__brand">
+          <a href="#hero" class="brand brand--footer" aria-label="Meridyen Mimarlık — sayfa başına dön">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 27V13.4L16 5l12 8.4V27" stroke="currentColor" stroke-width="1.8"
+                      stroke-linejoin="round"/>
+                <path d="M4 27h24M12.6 27v-8.4h6.8V27" stroke="currentColor" stroke-width="1.8"
+                      stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">Meridyen</span>
+              <span class="brand__sub">Mimarlık &amp; İç Mimarlık</span>
+            </span>
+          </a>
+          <p class="site-footer__desc">
+            Konut, ofis ve ticari projelerde konsept tasarımdan anahtar teslim
+            uygulamaya kadar bütüncül mimari çözümler üretiyoruz.
+          </p>
+          <p class="site-footer__cert">TMMOB Mimarlar Odası tescilli &middot; SMM belgeli stüdyo</p>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Hizmet bağlantıları">
+          <h2 class="site-footer__heading">Hizmetler</h2>
+          <ul class="site-footer__list">
+            <li><a href="#hizmetler">Mimari Tasarım &amp; Proje</a></li>
+            <li><a href="#hizmetler">İç Mimari &amp; Malzeme</a></li>
+            <li><a href="#hizmetler">Uygulama &amp; Şantiye</a></li>
+            <li><a href="#projeler">Proje Alanları</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Stüdyo bağlantıları">
+          <h2 class="site-footer__heading">Stüdyo</h2>
+          <ul class="site-footer__list">
+            <li><a href="#studyo">Hakkımızda</a></li>
+            <li><a href="#studyo">Çalışma Sürecimiz</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+            <li><a href="#iletisim">Ücretsiz Ön Görüşme</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading">İletişim</h2>
+          <address class="site-footer__address">
+            Kuloğlu Mah. Turnacıbaşı Cad. No: 18<br>
+            Kat 3, Beyoğlu / İstanbul<br><br>
+            <a href="mailto:info@meridyenmimarlik.com">info@meridyenmimarlik.com</a><br>
+            <a href="tel:+902123650150">+90 212 365 01 50</a>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">
+          &copy; <span id="currentYear">2026</span> Meridyen Mimarlık ve İç Mimarlık Ltd. Şti.
+          Tüm hakları saklıdır.
+        </p>
+        <ul class="site-footer__legal">
+          <li><a href="#kvkk" id="kvkk">KVKK Aydınlatma Metni</a></li>
+          <li><a href="#cerez">Çerez Politikası</a></li>
+          <li><a href="#kosullar">Kullanım Koşulları</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast bildirim alanı: JS tarafından doldurulur -->
+  <div class="toast-region" id="toastRegion" role="region" aria-live="polite" aria-label="Bildirimler"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
